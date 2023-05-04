@@ -14,13 +14,15 @@ public class Health : MonoBehaviour
     }
 
     public void TakeDamage(float Amount)
-    {
-        CurrentHealth -= Amount;
+   {
+       CurrentHealth -= Amount;
 
-        if(CurrentHealth <= 0)
-        {
-            Debug.Log("The player died.");
-            CurrentHealth = 0;
-        }
-    }
+
+       if(CurrentHealth <= 0)
+       {
+           Debug.Log("The player died.");
+           CurrentHealth = 0;
+           Destroy(gameObject);
+       }
+   }
 }
