@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/LevelSelection.unity
+    guid: 226fe17702ad64240a48c8fd3bc6bfc6
+  - enabled: 1
+    path: Assets/Scenes/Boba's Bamboo Forest.unity
+    guid: 3802b548a78ea4ca4a1ed691509e732e
   m_configObjects: {}
