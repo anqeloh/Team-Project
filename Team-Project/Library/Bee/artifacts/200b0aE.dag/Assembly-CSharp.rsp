@@ -118,6 +118,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"/Applications/Unity/Hub/Editor/2021.3.9f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -329,6 +330,8 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Unity.Postprocessing.Editor.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Rider.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Services.Core.Analytics.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Services.Core.Environments.ref.dll"
@@ -352,6 +355,7 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
+-analyzer:"Assets/Unity Store Assets/UnityTechnologies/EffectExamples/Editor/PackageManagerAssembly/PackageManagerAssembly.dll"
 "Assets/Scripts/Bullet.cs"
 "Assets/Scripts/EnemyScript.cs"
 "Assets/Scripts/Gun.cs"
@@ -396,6 +400,13 @@
 "Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs"
 "Assets/Unity Store Assets/LowPolyWater_Pack/Scripts/LowPolyWater.cs"
 "Assets/Unity Store Assets/TutorialInfo/Scripts/Readme.cs"
+"Assets/Unity Store Assets/UnityTechnologies/EffectExamples/Shared/Scripts/DecalDestroyer.cs"
+"Assets/Unity Store Assets/UnityTechnologies/EffectExamples/Shared/Scripts/ExtinguishableFire.cs"
+"Assets/Unity Store Assets/UnityTechnologies/EffectExamples/Shared/Scripts/GunAim.cs"
+"Assets/Unity Store Assets/UnityTechnologies/EffectExamples/Shared/Scripts/GunShoot.cs"
+"Assets/Unity Store Assets/UnityTechnologies/EffectExamples/Shared/Scripts/ParticleCollision.cs"
+"Assets/Unity Store Assets/UnityTechnologies/EffectExamples/Shared/Scripts/ParticleExamples.cs"
+"Assets/Unity Store Assets/UnityTechnologies/EffectExamples/Shared/Scripts/ParticleMenu.cs"
 -langversion:9.0
 
 /deterministic
