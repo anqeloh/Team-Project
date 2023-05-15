@@ -128,6 +128,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
-  Damage: 20
+  Damage: 100
   KOTime: 1
   MaxSpeed: 0
