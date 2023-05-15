@@ -355,7 +355,6 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
--analyzer:"Assets/Unity Store Assets/UnityTechnologies/EffectExamples/Editor/PackageManagerAssembly/PackageManagerAssembly.dll"
 "Assets/Scripts/Bullet.cs"
 "Assets/Scripts/EnemyScript.cs"
 "Assets/Scripts/Gun.cs"

@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638192508290000000
+      ticks: 638195142060000000
     m_Hash: 4114050698
   m_LockFileStatus:
     m_FilePath: /Users/ANSTACRUZ/Documents/GitHub/Team-Project/Team-Project/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638192508300000000
+      ticks: 638195142060000000
     m_Hash: 3948436960
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -555,8 +555,10 @@ m_ResolvedPackages:
     - 3.2.0
     - 3.2.1
     - 3.2.2
+    - 3.3.0
     compatible:
     - 3.2.2
+    - 3.3.0
     verified: 3.2.2
   dependencies:
   - name: com.unity.modules.physics
