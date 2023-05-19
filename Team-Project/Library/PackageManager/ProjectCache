@@ -5,11 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-<<<<<<< HEAD
-      ticks: 638195142060000000
-=======
       ticks: 638195143780000000
->>>>>>> Waves
     m_Hash: 4114050698
   m_LockFileStatus:
     m_FilePath: /Users/TRBUI/Documents/GitHub/Team-Project/Team-Project/Packages/packages-lock.json
@@ -17,11 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-<<<<<<< HEAD
-      ticks: 638195142060000000
-=======
       ticks: 638195143780000000
->>>>>>> Waves
     m_Hash: 3948436960
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -519,7 +511,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: The post-processing stack (v2) comes with a collection of effects
     and image filters you can apply to your cameras to improve the visuals of your
     games.
@@ -582,7 +574,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637855259850000000
   documentationUrl: 
@@ -3261,6 +3253,7 @@ m_ResolvedPackages:
     - 1.7.1
     - 1.8.1
     - 1.8.2
+    - 1.9.0
     compatible:
     - 1.4.2
     - 1.4.3
@@ -3270,6 +3263,7 @@ m_ResolvedPackages:
     - 1.7.1
     - 1.8.1
     - 1.8.2
+    - 1.9.0
     verified: 1.4.3
   dependencies:
   - name: com.unity.modules.unitywebrequest
