@@ -121,6 +121,8 @@
 -define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"/Applications/Unity/Hub/Editor/2021.3.9f1/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll"
+-r:"/Applications/Unity/Hub/Editor/2021.3.9f1/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.3.9f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.3.9f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.3.9f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll"
@@ -324,9 +326,9 @@
 -r:"/Applications/Unity/Hub/Editor/2021.3.9f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.3.9f1/Unity.app/Contents/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.3.9f1/Unity.app/Contents/NetStandard/ref/2.1.0/netstandard.dll"
--r:"/Users/ANSTACRUZ/Documents/GitHub/Team-Project/Team-Project/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
--r:"/Users/ANSTACRUZ/Documents/GitHub/Team-Project/Team-Project/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
--r:"/Users/ANSTACRUZ/Documents/GitHub/Team-Project/Team-Project/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"/Users/TRBUI/Documents/GitHub/Team-Project/Team-Project/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
+-r:"/Users/TRBUI/Documents/GitHub/Team-Project/Team-Project/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
+-r:"/Users/TRBUI/Documents/GitHub/Team-Project/Team-Project/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
@@ -355,8 +357,13 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
+<<<<<<< HEAD
+=======
+"Assets/Enemy.cs"
+>>>>>>> Waves
 "Assets/Scripts/Bullet.cs"
 "Assets/Scripts/EnemyScript.cs"
+"Assets/Scripts/EnemyWave.cs"
 "Assets/Scripts/Gun.cs"
 "Assets/Scripts/Health.cs"
 "Assets/Scripts/LevelSelector.cs"
@@ -366,6 +373,8 @@
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerControllerSS.cs"
 "Assets/Scripts/PlayerMovement.cs"
+"Assets/Scripts/WaveSpawner.cs"
+"Assets/Scripts/WaveSpawner2.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"

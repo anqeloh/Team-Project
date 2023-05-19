@@ -433,7 +433,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &7778651045336995509
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -450,7 +450,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7778651045008872944
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +464,7 @@ GameObject:
   - component: {fileID: 7778651045008872947}
   - component: {fileID: 3271051205241531968}
   - component: {fileID: 2297050104449247894}
+  - component: {fileID: -9200439382403583856}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -530,8 +531,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxSpeed: 2
-  SightRange: 20
-  DetectionRange: 20
+  SightRange: 1000
+  DetectionRange: 1000
   rb: {fileID: 7778651045008872946}
   Target: {fileID: 0}
   Damage: 10
@@ -548,8 +549,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f948391c2993486fb2e7e31f2f1a5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 50
+  MaxHealth: 40
   CurrentHealth: 0
+--- !u!114 &-9200439382403583856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7778651045008872944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20f546ce4e23e444cb3a511b5f335aef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
 --- !u!1 &8403524454334036137
 GameObject:
   m_ObjectHideFlags: 0
