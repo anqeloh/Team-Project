@@ -6,11 +6,24 @@ using UnityEngine;
 public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] public float countdown;
-    [SerializeField] public GameObject spawnPoints;
     public Wave[] waves;
     public int currentWaveIndex = 0;
     private bool readyToCountDown;
+    public Transform[] spawnPoints;
+    public GameObject enemyPrefab;
+    private int enemyCount;
+    private int waveNumber = 1;
+    public int targetObjectCount = 5;
+    private int destroyedObjectCount = 0;
+    private bool triggeredEvent = false;
+    
+ 
+    public float timeBetweenEnemySpawn;
+    public float timeBetweenWaves;
+    bool spawningWave;
+
     private void Start()
+    
     {
      readyToCountDown = true;
 
@@ -27,35 +40,62 @@ public class WaveSpawner : MonoBehaviour
             Debug.Log("You survived every wave!");
             return;
         }
+        
+        if (!triggeredEvent && destroyedObjectCount >= targetObjectCount)
+        {
+            // Trigger your event or do something when the target object count is reached
+            Debug.Log("Target object count reached!");
+            triggeredEvent = true;
+        }
+        enemyCount = FindObjectsOfType<Enemy>().Length;
+ 
+        if (enemyCount == 0 && !spawningWave)
+        {
+            waveNumber++;
+            StartCoroutine(SpawnEnemyWave(waveNumber));
+        }
+        
+         if (waves[currentWaveIndex].enemiesLeft == 0)
+        {
+            readyToCountDown = true;
+            currentWaveIndex++;
+        }
         if (readyToCountDown == true)
         {
-        countdown -= Time.deltaTime;
+            countdown -= Time.deltaTime;
         }
+        if (enemyPrefab == null)
+        {
+            
+        } 
      if (countdown <= 0)
      {
         readyToCountDown = false;
         countdown = waves[currentWaveIndex].timeToNextWave;
-        StartCoroutine(SpawnWave());
+        StartCoroutine(SpawnEnemyWave(waveNumber));
      }   
-     if (waves[currentWaveIndex].enemiesLeft == 0)
-     {
-        readyToCountDown = true;
-        currentWaveIndex++;
-     }
+
+     void ObjectDestroyed()
+    {
+        destroyedObjectCount++;
+    }
     }
 
-    private IEnumerator SpawnWave()
+    IEnumerator SpawnEnemyWave(int enemiesToSpawn)
     {
-        if (currentWaveIndex < waves.Length)
+        spawningWave = true;
+        yield return new WaitForSeconds(timeBetweenWaves); //We wait here to pause between wave spawning
+        for (int i = 0; i < enemiesToSpawn; i++)
         {
-        for (int i = 0; i < waves[currentWaveIndex].enemies.Length; i++)
-        {
-            Enemy enemy = Instantiate(waves[currentWaveIndex].enemies[i], spawnPoints.transform);
-            enemy.transform.SetParent(spawnPoints.transform);
-            yield return new WaitForSeconds(waves[currentWaveIndex].timeToNextEnemy);
+            Instantiate(enemyPrefab, spawnPoints[Random.Range(0, spawnPoints.Length)].position, enemyPrefab.transform.rotation);
+            yield return new WaitForSeconds(timeBetweenEnemySpawn); //We wait here to give a bit of time between each enemy spawn
         }
-        }
+        spawningWave = false;
     }
+
+
+        
+    
 }
 
 [System.Serializable]

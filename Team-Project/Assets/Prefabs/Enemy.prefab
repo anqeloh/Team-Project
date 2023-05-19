@@ -531,8 +531,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxSpeed: 2
-  SightRange: 20
-  DetectionRange: 20
+  SightRange: 1000
+  DetectionRange: 1000
   rb: {fileID: 7778651045008872946}
   Target: {fileID: 0}
   Damage: 10

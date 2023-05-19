@@ -25,6 +25,16 @@ public class Bullet : MonoBehaviour
    StartCoroutine(AttackDelay(KOTime));
    }
   }
+
+  private void OnTriggerEnter(Collider other)
+    {
+        // Check if the collided object has a specific tag (e.g., "Player")
+        if (other.CompareTag("Enemy"))
+        {
+            // Destroy the current GameObject
+            Destroy(gameObject);
+        }
+    }
   IEnumerator AttackDelay(float Delay)
    {
        Speed = 0;
